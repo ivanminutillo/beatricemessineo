@@ -1,0 +1,221 @@
+---
+layout: default
+title: ivan cafe
+path: home
+---
+
+<div class="mt-24">
+  <div class="gap-6 lg:grid lg:grid-cols-5">
+    <div class="col-span-3 mt-6 mr-8">
+      <span role="img" aria-label="hello" class="text-4xl block mb-4">👋</span>
+      <div class="text-3xl font-bold leading-relaxed prose text-base-content">
+        I am Ivan, I write code and experiment with technology to empower communities and build tools to navigate the post-capitalism era. 
+      </div>
+    </div>
+    <div role="img" aria-label="a bunch of lovely animals near a bonfire. Illustration made by Rocco Lombardi" class="col-span-2 mt-6 block bg-center bg-no-repeat bg-cover" style="width: 100%;height: 0;background-image: url(static/img/1.png);padding: 35%;"></div>
+  </div>
+</div>
+
+<!-- Return all tags -->
+<section class="">
+  <h2 id="tags" class="uppercase tracking-wider mt-20 mb-3 text-base-content text-opacity-80 text-xs">What I use to talk about</h2>
+  {% for tag in collections.tagList %}
+    {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+    <a href="{{ tagUrl | url }}">
+    <span class="mb-1 mr-1 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
+    <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+        <circle cx="4" cy="4" r="3" />
+    </svg>
+    {{ tag }}
+    </span>
+    </a>
+  {% endfor %}
+</section>
+
+
+
+<!-- <h2 class="uppercase tracking-wider border-t border-base-content border-opacity-20 mt-24 pt-6 mb-6 text-base-content text-opacity-80 text-xs">What I am busy with</h2> -->
+<!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 ">
+  <div class="">
+    <div class="font-bold text-sm mb-2">I am working on</div>
+    <div class="bg-base-content bg-opacity-10 flex items-center space-x-4 shadow-sm rounded p-3">
+      <img alt="bonfire logo" class="w-8" src="static/img/bonfire.png"/>
+      <div class="text-base-content text-opacity-80">
+        <a class="link link-hover font-bold" target="_blank" href="https://bonfirenetworks.org/">Bonfire</a>
+        <div class="text-sm">Social networking reimagined</div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="">
+    <div class="font-bold text-sm mb-2">I am reading</div>
+    <div class="flex flex-col space-y-2">
+      <div class="bg-base-content bg-opacity-10 flex items-center space-x-4 shadow-sm rounded p-3">
+        <img alt="bonfire logo" class="w-8" src="static/img/dawn.jpg"/>
+        <div class="text-base-content text-opacity-80">
+          <a class="link link-hover font-bold" target="_blank" href="https://www.penguin.co.uk/books/314/314162/the-dawn-of-everything/9780141991061.html">The Dawn of Everything</a>
+          <div class="text-sm">By David Graeber, David Wengrow</div>
+        </div>
+      </div>
+      <div class="bg-base-content bg-opacity-10 flex items-center space-x-4 shadow-sm rounded p-3">
+        <img alt="bonfire logo" class="w-8" src="static/img/elogio.jpeg"/>
+        <div class="text-base-content text-opacity-80">
+          <a class="link link-hover font-bold" target="_blank" href="https://www.edizioninottetempo.it/it/elogio-della-terra">Elogio della terra</a>
+          <div class="text-sm">By Byung-Chul Han</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="font-bold text-sm mb-2">I am growing</div>
+    <div class="flex items-center flex-wrap">
+      <span class="bg-base-content bg-opacity-10 mr-2 mb-2 flex items-center space-x-4 shadow-sm rounded p-2">
+        <div class="text-base-content text-opacity-80">🥬 Salads</div>
+      </span>
+      <span class="bg-base-content bg-opacity-10 mr-2 mb-2 flex items-center space-x-4 shadow-sm rounded p-2">
+        <div class="text-base-content text-opacity-80">🧅 Onions</div>
+      </span>
+      <span class="bg-base-content bg-opacity-10 mr-2 mb-2 flex items-center space-x-4 shadow-sm rounded p-2">
+        <div class="text-base-content text-opacity-80">🥒 Zucchini</div>
+      </span>
+      <span class="bg-base-content bg-opacity-10 mr-2 mb-2 flex items-center space-x-4 shadow-sm rounded p-2">
+        <div class="text-base-content text-opacity-80">String beans</div>
+      </span>
+      <span class="bg-base-content bg-opacity-10 mr-2 mb-2 flex items-center space-x-4 shadow-sm rounded p-2">
+        <div class="text-base-content text-opacity-80">🍅 Tomatoes "Pachino"</div>
+      </span>
+      <span class="bg-base-content bg-opacity-10 mr-2 mb-2 flex items-center space-x-4 shadow-sm rounded p-2">
+        <div class="text-base-content text-opacity-80">🌶️ Chili Peppers</div>
+      </span>
+      <span class="bg-base-content bg-opacity-10 mr-2 mb-2 flex items-center space-x-4 shadow-sm rounded p-2">
+        <div class="text-base-content text-opacity-80">🌿 Aromatic herbs</div>
+      </span>
+    </div>
+  </div>
+
+</div> -->
+
+<h2 class="uppercase border-t border-base-content border-opacity-20 mt-24 tracking-wider pt-6 mb-6 text-base-content text-opacity-80 text-xs">My latest posts</h2>
+<section class="mt-6 lg:px-0">
+  {% set postslist = collections.post %}
+  {% for post in postslist | reverse %}
+  {% if loop.index0 < 3 %}
+    <article class="my-16 lg:my-8 lg:flex lg:space-x-6">
+      <div class="w-full h-60 lg:w-32 lg:h-32 bg-blueGray-400 rounded bg-cover bg-no-repeat bg-center shadow-xl" style="background-image: url({{ post.data.image }})"></div>
+      <div class="flex-1 mt-4 lg:mt-0">
+        <h2 class="font-bold text-2xl text-blueGray-200 hover:text-blueGray-200 hover:underline mb-2">
+            <a href="{{ post.url | url }}">
+                {% if post.data.title %}
+                    {{ post.data.title }}
+                {% else %}
+                    Untitled
+                {% endif %}
+            </a>
+        </h2>
+        <div class="flex items-center space-x-2">
+            <span class="flex items-center space-x-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-base-content text-opacity-70" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                  </svg>
+              <time class="text-xs text-base-content text-opacity-70">{{ post.date | readableDate }}</time>
+            </span>
+        </div>
+        
+        
+        {% if post.data.description %}
+            <p class="text-sm text-base-content text-opacity-80 my-2">
+                {{ post.data.description }}
+            </p>
+        {% endif %}
+        <div class="my-2">
+            {%- for tag in post.data.tags -%}
+            {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+                <a href="{{ tagUrl | url }}">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
+                <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-indigo-400" fill="currentColor" viewBox="0 0 8 8">
+                    <circle cx="4" cy="4" r="3" />
+                </svg>
+                {{ tag }}
+                </span>
+                </a>
+            {%- endfor %}
+        </div>
+        <div>
+            <a href="{{ post.url | url }}" class="text-pink-400 font-bold text-sm">
+                Read more →
+            </a>
+        </div>
+      </div>
+    </article>
+    {% endif %}
+  {% endfor %}
+</section>
+<div class="flex mx-auto mt-12">
+  <a href="/blog" class="btn btn-outline btv-sm normal-case">View all posts</a>
+</div>
+
+<div class="border-t border-b flex flex-col items-center border-base-content border-opacity-20 py-24 mt-24 mb-6">
+  <div class="text-4xl text-center font-bold">Do you want to work together? </div>
+  <div class="text-xl text-center font-medium mt-6">Drop me a line to ivanminutillo@outlook.it or contact me on the <a class="link font-bold" target="blank" href="https://social.coop/@bernini">fediverse</a> </div>
+</div>
+
+{# 
+<div class="max-w-screen-md mx-auto mt-4">
+  <div class="block px-6 mb-10 lg:flex items-top lg:px-0">
+    <img class="rounded-xl w-36 h-36" src="static/img/logo.jpg" />
+    <div class="mt-4 text-left lg:ml-4 lg:mt-0">
+      <h1 class="mb-2 text-3xl font-extrabold tracking-wide text-left text-gray-800">Hello, I'm Ivan</h1>
+      <h2 class="leading-7 tracking-wide text-gray-600 text-md">I am a designer and frontend developer and an eager reader. I am a member of <a class="font-semibold text-pink-400 underline" target="blank" href="https://zo.team">zo</a> and <a class="font-semibold text-pink-400 underline" target="blank" href="https://bonfire.cafe">bonfire</a> crews. 
+      <br/> My recent passions involves baking breads and create generative glyphs with <a class="font-medium text-gray-600 underline" target="blank" href="https://p5js.org">p5.js</a>. 
+      <br/> I am currently reading <a class="font-medium text-gray-600 underline" target="blank" href="https://press.princeton.edu/books/paperback/9780691220550/the-mushroom-at-the-end-of-the-world">The Mushroom at the end of the world</a> by <a class="font-medium text-gray-600 underline" target="blank" href="https://en.wikipedia.org/wiki/Anna_Tsing">Anna Tsing</a> and <a class="font-medium text-gray-600 underline" target="blank" href="https://www.upress.umn.edu/book-division/books/what-would-animals-say-if-we-asked-the-right">What Would Animals Say If We Asked the Right Questions?</a> by <a class="font-medium text-gray-600 underline" target="blank" href="https://en.wikipedia.org/wiki/Vinciane_Despret">Vinciane Despret</a>. 
+      <br> One of my favourite movie is <a class="font-medium text-gray-600 underline" target="blank" href="https://en.wikipedia.org/wiki/Arrival_(film)">The Arrival</a>. <br/>
+      You can get in touch via <a class="font-medium text-gray-600 underline" target="blank" href="mailto:ivanminutillo@outlook.it">email</a> or <a class="font-medium text-gray-600 underline" target="blank" href="https://twitter.com/ivanminutillo">twitter</a>.</h2>
+      </h2>
+    </div>
+  </div>
+  <div>
+    <h2 class="px-6 text-xs tracking-wider text-pink-600 uppercase lg:px-0">Latest projects</h2>
+    <div class="mt-4">
+      <ul class="grid grid-cols-1 gap-2 px-6 lg:px-0 lg:grid-cols-3">
+        <li class="p-4 bg-gray-100 rounded shadow-sm">
+          <a target="blank" href="https://bonfirenetworks.org/" target="blank">
+            <h3 class="text-sm font-bold text-gray-800">Bonfire</h3>
+            <p class="text-sm text-gray-600">An open source federated social network for individuals and communities to design, operate and control their own digital lives.</p>
+          </a>
+        </li>
+        <li class="p-4 bg-gray-100 rounded shadow-sm">
+          <a target="blank" href="https://reflowproject.eu/" target="blank">
+            <h3 class="text-sm font-bold text-gray-800">Reflow</h3>
+            <p class="text-sm text-gray-600">REFLOW is an EU H2020 funded project that seeks to understand and transform urban material flows, co-create and test regenerative solutions at business, governance, and citizen levels to create a resilient circular economy.</p>
+          </a>
+        </li>
+        <li class="p-4 bg-gray-100 rounded shadow-sm">
+          <a target="blank" href="https://medium.com/sector-challenge-9-claiming-universal-credit/tagged/catalyst" target="blank">
+            <h3 class="text-sm font-bold text-gray-800">Catalyst: UK Universal Credit</h3>
+            <p class="text-sm text-gray-600">Prototype and test ways of providing remote support for individuals struggling or failing to make Universal Credit claims online for reasons like a lack of digital or language skills, or mental health issues.</p>
+          </a>
+        </li>
+        <li class="p-4 bg-gray-100 rounded shadow-sm">
+          <a target="blank" href="https://moodle.com/moodlenet/" target="blank">
+            <h3 class="text-sm font-bold text-gray-800">MoodleNet</h3>
+            <p class="text-sm text-gray-600">An open social media platform for educators, focused on professional development and open content to empower communities of educators to share and learn from each other to improve the quality of education.</p>
+          </a>
+        </li>
+        <li class="p-4 bg-gray-100 rounded shadow-sm">
+          <a target="blank" href="https://uniquid.com/" target="blank">
+            <h3 class="text-sm font-bold text-gray-800">Uniquid</h3>
+            <p class="text-sm text-gray-600">UniquID is the Identity as a Service to leverage the emerging standards for a decentralized IoT.</p>
+          </a>
+        </li>
+        <li class="p-4 bg-gray-100 rounded shadow-sm">
+          <a target="blank" href="fair.coop" target="blank">
+            <h3 class="text-sm font-bold text-gray-800">FairCoop</h3>
+            <p class="text-sm text-gray-600">FairCoop is an open global cooperative, self-organized via the web and remaining outside nation-state control.</p>
+          </a>
+        </li>
+      </ul>
+    <div>
+          
+  </div>
+  {% include "./_includes/partials/content.html" %} #}
+</div>
