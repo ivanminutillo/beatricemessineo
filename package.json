@@ -31,6 +31,6 @@
   },
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "11ty/eleventy-plugin-rss",
-    "daisyui": "^2.13.2"
+    "daisyui": "^3.7.0"
   }
 }
