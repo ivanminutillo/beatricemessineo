@@ -2,7 +2,7 @@
 title: Megan Nolan e le piccole umane debolezze
 description: Non capita spesso di trovare un autore che parli a tutti e di tutti, in grado di dissezionare i contorti meccanismi della mente umana con una perizia magistrale e una disinvoltura talvolta agghiacciante.
 date: 2023-09-07
-image: ../../../static/img/megannolan.jpg
+image: ../../../static/img/megan.png
 tags:
   - femminismo
 ---

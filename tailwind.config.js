@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./**/*.html"],
+  content: ['./src/**/*.{njk,md,html}'],
   theme: {
     container: {
       center: true,
@@ -10,8 +10,8 @@ module.exports = {
   },
   variants: {},
   plugins: [
-    require("@tailwindcss/typography"),
-    require('daisyui')
+    require('daisyui'),
+    require("@tailwindcss/typography")
   ],
   daisyui: {
     themes: ["light", "dark", "cupcake"],
