@@ -1,0 +1,17 @@
+---
+title: La coppia felice di Naoise Dolan
+description: Esplorare un libro attraverso il dialogo tra l'autrice e la sua traduttrice rivela una profondità unica, come dimostra l'incontro tra Naoise Dolan e Claudia Durastanti.
+date: 2023-09-30
+image: ../../../static/img/naoise.jpg
+tags:
+  - femminismo
+---
+
+
+Forse sono di parte, ma addentrarsi nelle profondità di un libro attraverso il dialogo dell’autrice con la sua traduttrice è un privilegio davvero sottovalutato. È stato Italo Calvino ad affermare che tradurre è il vero modo di leggere un testo, e i vari critici dei Translation Studies hanno contribuito ad assegnare al traduttore il ruolo di primo vero lettore di un’opera. Per quanto riguarda l’Italia, e la scrittrice irlandese Naoise Dolan, questa posizione ambivalente è stata ricoperta da Claudia Durastanti che il 26 settembre alla libreria Spazio Sette di Largo Argentina, a Roma, ha parlato con l’autrice del suo secondo romanzo.
+
+La coppia felice (Blu Atlantide, settembre 2023) racconta di due giovani e del loro tentativo di convolare a nozze – e a pensare di averne riassunto la trama con due semplici proposizioni mi viene già da sorridere. Perché dietro questo breve agglomerato di parole si cela il ritratto puntuale di una generazione, imbastito da un’artista tanto sagace e ingegnosa, quanto colta e razionale. L’espediente del matrimonio, tanto per dirne una, preso in prestito dalla letteratura vittoriana, campo di specializzazione dell’autrice, viene rovesciato e svuotato del suo significato fungendo da mero proscenio, un palco dove diversi attori si esibiscono e mettono in mostra i propri limiti e le proprie difficoltà, una metafora estesa – spiega Nolan – della fatica con cui i millennial, i para-trentenni di oggi, si confrontano con un rigido sistema di valori che non li rispecchia più.
+
+Questa ambiguità è visibile a più livelli: nelle vicende raccontate dal narratore, nei ragionamenti dei personaggi (“Celine si chiede perché stia per sposare un uomo, ma non arriva a metterlo in dubbio. Non è una stupida. L'avevano istruita fin troppo bene”), fino a insinuarsi nella rigida impalcatura del libro, che volutamente stride con la fluidità dei personaggi. I capitoli sono divisi per punti di vista e come titolo non portano il nome dei protagonisti, bensì il ruolo che sono chiamati a svolgere all’interno del matrimonio. E così abbiamo la sposa, la damigella d’onore, i testimoni: ruoli di cui nessuno dei personaggi sembra essere all’altezza. Così attraverso lo specifico spaccato del matrimonio, ovvero di una tradizionale istituzione eteronormativa, Nolan rimanda al più vasto contesto dell’attuale società capitalistica che impone standard e costumi sempre meno compresi, condivisi e apprezzati dalle nuove generazioni.
+
+Il divario tra vecchi e nuovi sistemi di valori è suggerito anche dal rapporto che i personaggi più giovani intrattengono con quelli  più adulti, fa notare Durastanti mentre racconta di come abbia attinto dai vari registri  dell’italiano per prestare fede all’indole dei diversi protagonisti. E così i pensieri, i discorsi e le visioni dei membri dell’upper-middle-class irlandese si alternano a quelli di giovani queer – che in certi casi rifiutano gli standard capitalistici e in altri li inseguono con enorme frustrazione – scanditi da un ritmo fatto di arguzie e ironia. E se il tema della musica permea l’intero romanzo (Céline, la sposa, è un’abile pianista), è l’ironia più o meno lampante dell’autrice che ne scandisce il tempo, la dinamica e il mood – proprio come in un grande spartito.
